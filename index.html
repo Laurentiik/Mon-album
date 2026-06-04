@@ -54,19 +54,77 @@ audio {
 
 <p>Découvrez mon nouvel album.</p>
 
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Mon Album</title>
+
+<style>
+body{
+  background:#111;
+  color:white;
+  font-family:Arial;
+  text-align:center;
+  padding:30px;
+}
+
+.container{
+  max-width:600px;
+  margin:auto;
+}
+
+img{
+  width:100%;
+  border-radius:10px;
+}
+
+.btn{
+  display:inline-block;
+  margin-top:20px;
+  padding:15px 25px;
+  background:#ff4d4d;
+  color:white;
+  text-decoration:none;
+  border-radius:8px;
+  font-weight:bold;
+}
+
+audio{
+  width:100%;
+  margin-top:10px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Nom de l’Album</h1>
+<h2>Laurentiik</h2>
+
+<img src="cover.jpg" alt="cover">
+
+<p>Découvrez mon nouvel album.</p>
+
 <h3>Extraits (20 sec)</h3>
 
 <p>Titre 1</p>
-<audio controls src="extrait1.mp3"></audio>
+<audio controls>
+  <source src="extrait1.mp3" type="audio/mpeg">
+</audio>
 
 <p>Titre 2</p>
-<audio controls src="extrait2.mp3"></audio>
+<audio controls>
+  <source src="extrait2.mp3" type="audio/mpeg">
+</audio>
 
 <a href="https://paypal.me/Laurentiik/15.99" class="btn">
 Acheter 15,99 €
 </a>
 
-
 </div>
+
 </body>
 </html>
